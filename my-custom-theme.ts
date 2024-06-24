@@ -22,7 +22,7 @@ export const myCustomTheme: CustomThemeConfig = {
 		"--on-surface": "255 255 255",
 		// =~= Theme Colors  =~=
 		// primary | #fd7c51 
-		"--color-primary-50": "255 235 229", // #ffebe5 
+		"--color-primary-50": "255 235 229", // #ffebe5
 		"--color-primary-100": "255 229 220", // #ffe5dc
 		"--color-primary-200": "255 222 212", // #ffded4
 		"--color-primary-300": "254 203 185", // #fecbb9
@@ -87,17 +87,17 @@ export const myCustomTheme: CustomThemeConfig = {
 		"--color-error-700": "14 85 158", // #0e559e
 		"--color-error-800": "11 68 127", // #0b447f
 		"--color-error-900": "9 55 103", // #093767
-		// surface | #998575 
-		"--color-surface-50": "240 237 234", // #f0edea
-		"--color-surface-100": "235 231 227", // #ebe7e3
-		"--color-surface-200": "230 225 221", // #e6e1dd
-		"--color-surface-300": "214 206 200", // #d6cec8
-		"--color-surface-400": "184 170 158", // #b8aa9e
-		"--color-surface-500": "153 133 117", // #998575
-		"--color-surface-600": "138 120 105", // #8a7869
-		"--color-surface-700": "115 100 88", // #736458
-		"--color-surface-800": "92 80 70", // #5c5046
-		"--color-surface-900": "75 65 57", // #4b4139
+		// surface | #9a8c74 
+		"--color-surface-50": "240 238 234", // #f0eeea
+		"--color-surface-100": "235 232 227", // #ebe8e3
+		"--color-surface-200": "230 226 220", // #e6e2dc
+		"--color-surface-300": "215 209 199", // #d7d1c7
+		"--color-surface-400": "184 175 158", // #b8af9e
+		"--color-surface-500": "154 140 116", // #9a8c74
+		"--color-surface-600": "139 126 104", // #8b7e68
+		"--color-surface-700": "116 105 87", // #746957
+		"--color-surface-800": "92 84 70", // #5c5446
+		"--color-surface-900": "75 69 57", // #4b4539
 		
 	}
 }

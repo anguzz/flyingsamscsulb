@@ -22,6 +22,8 @@
 	import { computePosition, autoUpdate, flip, shift, offset, arrow } from '@floating-ui/dom';
 	import { storePopup } from '@skeletonlabs/skeleton';
 	storePopup.set({ computePosition, autoUpdate, flip, shift, offset, arrow });
+
+	import Home from '../components/Home.svelte'
 </script>
 
 <!-- App Shell -->
@@ -30,7 +32,7 @@
 		<!-- App Bar -->
 		<AppBar>
 			<svelte:fragment slot="lead">
-				<strong class="text-xl uppercase">Skeleton</strong>
+				<strong class="text-xl uppercase">Flying Samaritans CSULB</strong>
 			</svelte:fragment>
 			<svelte:fragment slot="trail">
 				<a
@@ -61,6 +63,9 @@
 			</svelte:fragment>
 		</AppBar>
 	</svelte:fragment>
-	<!-- Page Route Content -->
+
+<Home/>
+
+
 	<slot />
 </AppShell>
