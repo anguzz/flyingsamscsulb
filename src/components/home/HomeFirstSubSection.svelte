@@ -9,27 +9,21 @@
     <div
         class="flex max-w-[94%] flex-col items-center justify-center gap-2 text-center text-lg font-semibold italic  text-gray-700 dark:text-gray-300 md:max-w-[40%]"
     >
-        <div
-            class="relative mb-2 text-3xl font-bold text-error-500 dark:text-gray-200"
+
+       <!-- below responsible for formatting text next to image-->
+        <div 
+            class="relative mb-2 text-3xl font-bold text-primary-500 dark:text-primary-500" 
         >
-            <div
-            class="absolute mb-2 bg-clip-text text-3xl font-bold text-transparent blur-sm bg-secondary-500 dark:bg-secondary-500">
-                 About us
-            </div>
-            <div class="relative"> About us</div>
+            <div class="relative"> Flying samaritans CSULB </div>
         </div>
+
         <div>
-            Flying samaritans
+           Non-profit organization dedicated to providing free quality healthcare   <etc class=""></etc>
         </div>
-        <div>
-           write stuff here about the club <etc class=""></etc>
+        <div class= "font-light">
+            Tijuana Mexico 🇲🇽
         </div>
-        <div>
-            more stuff 
-        </div>
-        <div>
-            more stuff
-        </div>
+     
     </div>
 
     <div class="w-[95%] p-1 md:w-5/12">
@@ -37,7 +31,7 @@
             class="group relative block overflow-hidden rounded-lg border border-gray-800 transition-all duration-500"
         >
             <div
-                class="absolute inset-0 z-[8] h-full w-full overflow-hidden bg-indigo-700 bg-fixed opacity-0 transition duration-300 ease-in-out group-hover:opacity-40"
+                class="absolute inset-0 z-[8] h-full w-full overflow-hidden bg-indigo-700 bg-fixed opacity-0 transition duration-300 ease-in-out group-hover"
             />
 
             <div
@@ -48,15 +42,11 @@
                 <img src="{members}" />
             </div>
             <div
-                class="absolute -bottom-52 right-2 left-2 z-[9] rounded bg-slate-900 p-4 transition-all duration-500 group-hover:bottom-2"
+                class="absolute -bottom-52 right-2 left-2 z-[9] rounded bg-surface-400 p-4 transition-all duration-500 group-hover:bottom-2"
             >
-                <div
-                    class="hover:text-primary-600 text-lg font-medium transition duration-500"
-                >
-                     members &hearts;
-                </div>
-                <p class="text-slate-400">
-                    add a caption/date of members picture and when it was taken here
+             
+                <p class="text-warning-500">
+                    April Clinic 2024 &hearts;
                 </p>
             </div>
         </div>

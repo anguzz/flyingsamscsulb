@@ -37,27 +37,27 @@
 			<svelte:fragment slot="trail">
 				<a
 					class="btn btn-sm variant-ghost-surface"
-					href="https://discord.gg/EXqV7W8MtY"
+					href="flyingsamscsulb.com "
 					target="_blank"
 					rel="noreferrer"
 				>
-					Discord
+					Home
 				</a>
 				<a
 					class="btn btn-sm variant-ghost-surface"
-					href="https://twitter.com/SkeletonUI"
+					href=" flyingsamscsulb.com/about"
 					target="_blank"
 					rel="noreferrer"
 				>
-					Twitter
+					About
 				</a>
 				<a
 					class="btn btn-sm variant-ghost-surface"
-					href="https://github.com/skeletonlabs/skeleton"
+					href=" flyingsamscsulb.com/Contact"
 					target="_blank"
 					rel="noreferrer"
 				>
-					GitHub
+					Contact
 				</a>
 				<LightSwitch />
 			</svelte:fragment>
