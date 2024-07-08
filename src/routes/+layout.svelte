@@ -37,7 +37,7 @@
 			<svelte:fragment slot="trail">
 				<a
 					class="btn btn-sm variant-ghost-surface"
-					href="flyingsamscsulb.com "
+					href="flyingsamscsulb.com"
 					target="_blank"
 					rel="noreferrer"
 				>
@@ -45,7 +45,7 @@
 				</a>
 				<a
 					class="btn btn-sm variant-ghost-surface"
-					href=" flyingsamscsulb.com/about"
+					href=" flyingsamscsulb.com"
 					target="_blank"
 					rel="noreferrer"
 				>
@@ -53,7 +53,7 @@
 				</a>
 				<a
 					class="btn btn-sm variant-ghost-surface"
-					href=" flyingsamscsulb.com/Contact"
+					href=" flyingsamscsulb.com"
 					target="_blank"
 					rel="noreferrer"
 				>
@@ -69,3 +69,11 @@
 
 	<slot />
 </AppShell>
+ 
+<style>
+	/* Assuming .shadow-true is added when shadow prop is true */
+.AppBar.shadow-true {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* or use your custom shadow style */
+}
+
+</style>
