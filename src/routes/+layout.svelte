@@ -24,6 +24,11 @@
 	storePopup.set({ computePosition, autoUpdate, flip, shift, offset, arrow });
 
 	import Home from '../components/Home.svelte'
+
+	import { writable } from 'svelte/store';
+
+let menuOpen = writable(false); // This will control the menu state
+
 </script>
 
 <!-- App Shell -->
@@ -32,48 +37,55 @@
 		<!-- App Bar -->
 		<AppBar>
 			<svelte:fragment slot="lead">
-				<strong class="text-xl uppercase">Flying Samaritans CSULB</strong>
+				<strong class="text-xl uppercase">Flying Sams CSULB</strong>
+				<br><br>
+				<LightSwitch />
 			</svelte:fragment>
 			<svelte:fragment slot="trail">
 				<a
 					class="btn btn-sm variant-ghost-surface"
-					href="flyingsamscsulb.com"
-					target="_blank"
-					rel="noreferrer"
+					href="/"
+				
 				>
 					Home
 				</a>
 				<a
 					class="btn btn-sm variant-ghost-surface"
-					href=" flyingsamscsulb.com"
-					target="_blank"
-					rel="noreferrer"
+					href="/about"
 				>
 					About
 				</a>
 				<a
 					class="btn btn-sm variant-ghost-surface"
-					href=" flyingsamscsulb.com"
-					target="_blank"
-					rel="noreferrer"
+					href="/calendar"
+				
 				>
-					Contact
+					Calendar
 				</a>
-				<LightSwitch />
+				
 			</svelte:fragment>
 		</AppBar>
+
+		
+		  
 	</svelte:fragment>
-
-<Home/>
-
 
 	<slot />
 </AppShell>
  
 <style>
-	/* Assuming .shadow-true is added when shadow prop is true */
-.AppBar.shadow-true {
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* or use your custom shadow style */
-}
-
-</style>
+	.hamburger {
+	  background: none;
+	  border: none;
+	  font-size: 24px;
+	  cursor: pointer;
+	  display: none;
+	}
+  
+	@media (max-width: 768px) {
+	  .hamburger {
+		display: block; /* Show only on small screens */
+	  }
+	}
+  </style>
+  
