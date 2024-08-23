@@ -31,7 +31,7 @@
       name: "about",
       title: "About",
     },{
-      id: "#Calendar",
+      id: "#calendar",
       route: "/calendar",
       name: "calendar",
       title: "Calender",
