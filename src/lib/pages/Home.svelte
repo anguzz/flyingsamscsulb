@@ -1,17 +1,16 @@
-<script>
-    import { fly } from 'svelte/transition';
-    import { quintInOut } from 'svelte/easing';
-    import { onMount } from 'svelte';
+<script lang="ts">
+  import HomeFirstSubSection from "$lib/components/HomeFirstSubSection.svelte";
+  import Page from "$lib/components/Page.svelte";
+  import Socials from "$lib/components/Socials.svelte";
+  import { neutralBackground } from "$lib/utils/constants";
 
-    import HomeFirstSubSection from './home/HomeFirstSubSection.svelte'
+  let color = "text-grey-200"; 
+  export let backgroundClass = neutralBackground;
 
-    onMount(() => {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
-    });
 </script>
+<Page id="home"  {backgroundClass}> 
 
-<main class="my-10 w-full gap-5 font-semibold lg:grid lg:grid-cols-5">
+  <main class="my-10 w-full gap-5 font-semibold lg:grid lg:grid-cols-5">
     <div
         class="col-span-3 flex w-full items-center text-5xl text-gray-900 dark:text-gray-100 sm:text-7xl md:text-8xl lg:justify-start lg:pl-16 lg:text-7xl xl:pl-24 xl:text-8xl"
     >
@@ -66,3 +65,8 @@
     </div>
 </main>
 <HomeFirstSubSection />
+
+</Page>
+<style>
+
+</style>

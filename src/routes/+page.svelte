@@ -1,33 +1,30 @@
-<script lang="ts">
-	import '../app.postcss';
-	import { AppShell, AppBar } from '@skeletonlabs/skeleton';
-	import { LightSwitch } from '@skeletonlabs/skeleton';
-						
-	// Highlight JS
-	import hljs from 'highlight.js/lib/core';
-	import 'highlight.js/styles/github-dark.css';
-	import { storeHighlightJs } from '@skeletonlabs/skeleton';
-	import xml from 'highlight.js/lib/languages/xml'; // for HTML
-	import css from 'highlight.js/lib/languages/css';
-	import javascript from 'highlight.js/lib/languages/javascript';
-	import typescript from 'highlight.js/lib/languages/typescript';
+<script lang="ts" context="module">
 
-	hljs.registerLanguage('xml', xml); // for HTML
-	hljs.registerLanguage('css', css);
-	hljs.registerLanguage('javascript', javascript);
-	hljs.registerLanguage('typescript', typescript);
-	storeHighlightJs.set(hljs);
-
-	// Floating UI for Popups
-	import { computePosition, autoUpdate, flip, shift, offset, arrow } from '@floating-ui/dom';
-	import { storePopup } from '@skeletonlabs/skeleton';
-	storePopup.set({ computePosition, autoUpdate, flip, shift, offset, arrow });
-
-	import Home from '../components/Home.svelte'
 </script>
 
-<!-- App Shell -->
-<AppShell>
-<Home/>
-</AppShell>
- 
+<script lang="ts">
+  import SEO from "svelte-seo";
+  import Home from "$lib/pages/Home.svelte";
+  //import Events from "$lib/pages/Events.svelte";
+  import About from "$lib/pages/About.svelte";
+  import Calendar from "$lib/pages/Calendar.svelte";
+
+  import Footer from "$lib/pages/Footer.svelte";
+
+/* basic colors at  https://tailwindcss.com/docs/customizing-colors   more at  https://hypercolor.dev/   */ 
+  let primaryBackground = "bg-zinc-900 dark:bg-zinc-900";
+  let neutralBackground = "bg-zinc-900 dark:bg-zinc-900";
+</script>
+
+<SEO
+  title="Flying Samaritans CSULB"
+  description="Official website of the Flying Samaritans California State University, Longbeach chapter"
+  canonical="https://flyingsamscsulb.com/"
+/>
+
+<Home />
+<About backgroundClass={neutralBackground} />
+
+<Calendar  />
+
+<Footer  />
