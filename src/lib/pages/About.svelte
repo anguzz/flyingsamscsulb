@@ -5,141 +5,206 @@
   import Anchor from "$lib/components/Anchor.svelte";
   export let backgroundClass = primaryBackground;
   
-  
-  let box1title="Student run"
-  let box1info="The Flying Samaritans is a completely student-run organization, driven by the passion and dedication of future healthcare professionals at CSULB. We take pride in providing essential medical services to underserved communities, empowering our members to step into leadership roles and gain invaluable real-world experience."
-  
-  let box2title="When we meet "
-  let box2info="Our general meetings are held monthly on the first Monday of each month at 7pm"
-  
-  let box3title="Our goals"
-  let box3info="We aim to expand our services by adding optometry and dentistry to our monthly clinics, addressing the growing needs of our community."
+  let box1title = "Student run";
+  let box1info =
+    "The Flying Samaritans is a completely student-run organization, driven by the passion and dedication of future healthcare professionals at CSULB. We take pride in providing essential medical services to underserved communities, empowering our members to step into leadership roles and gain invaluable real-world experience.";
 
-  
-  let showThumbs=false
-  let showCaptions=false
+  let box2title = "When we meet ";
+  let box2info =
+    "Our general meetings are held monthly on the first Monday of each month at 7pm";
 
-  
+  let box3title = "Our goals";
+  let box3info =
+    "We aim to expand our services by adding optometry and dentistry to our monthly clinics, addressing the growing needs of our community.";
+
+  let showThumbs = false;
+  let showCaptions = false;
 </script>
+
 <Anchor id="services" />
+
 <section class="pb-20 relative block bg-grey-900">
   <div
     class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
     style="height: 80px;"
-    >
-    
-  </div>
+  ></div>
 </section>
-<section class="pb-20 bg-gray-300 -mt-24">
+<section class="pb-20 pt-2 bg-gray-300 -mt-24">
   <div class="container mx-auto px-4">
     <div class="flex flex-wrap">
       <div class="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center">
         <div
           class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg"
-          >
+        >
           <div class="px-4 py-5 flex-auto">
             <div
               class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-red-400"
+            >
+              <svg
+                fill="#000000"
+                height="24px"
+                width="24px"
+                version="1.1"
+                id="Capa_1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 0 346.351 346.351"
+                xml:space="preserve"
               >
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                <path d="M0 0v24h6v-24h-6zm4 22h-2v-2h1v-1h-1v-2h1v-1h-1v-2h1v-1h-1v-2h1v-1h-1v-2h1v-1h-1v-2h1v-1h-1v-2h2v20zm9-4.697l1.131 1.697h-1.131v-1.697zm-1-3.303v6h4l-4-6zm-4-14v24h16l-16-24zm2 20h1v-1h-1v-2h1v-1h-1v-2h1v-1h-1v-2h1v-1h-1v-3.026l10.392 15.026h-10.392v-2z"/>
+                <g>
+                  <path
+                    d="M344.153,61.722L289.881,7.451c-1.407-1.406-3.315-2.196-5.304-2.196c-1.988,0-3.896,0.79-5.303,2.197l-10.263,10.263
+                          l-3.274-3.274c-2.87-2.871-7.503-2.936-10.453-0.149L46.657,212.206c-1.05,1.05-1.764,2.389-2.053,3.846l-13.407,67.685
+                          L1.227,329.486c-1.51,2.305-1.635,5.252-0.325,7.676c1.31,2.424,3.844,3.935,6.599,3.935h159.511c4.143,0,7.5-3.357,7.5-7.5
+                          s-3.357-7.5-7.5-7.5H62.827l5.847-5.848l66.882-13.246c1.457-0.289,2.796-1.004,3.846-2.054L337.314,96.324
+                          c2.787-2.95,2.721-7.583-0.148-10.452l-3.276-3.276l10.266-10.267C347.083,69.4,347.083,64.651,344.153,61.722z M21.38,326.096
+                          l18.109-27.646l14.885,14.884l-12.76,12.762H21.38z M130.406,292.731L67.452,305.2l-21.047-21.046l12.471-62.953l8.512-8.513
+                          l71.53,71.531L130.406,292.731z M149.372,273.46l-71.225-71.226l16.243-15.343l70.323,70.324L149.372,273.46z M175.019,246.305
+                          L105.3,176.586L236.437,52.725l62.443,62.445L175.019,246.305z M309.185,104.26l-61.838-61.839l12.938-12.221l61.119,61.123
+                          L309.185,104.26z M323.284,71.987l-43.666-43.666l4.959-4.96l43.667,43.665L323.284,71.987z"
+                  />
+                </g>
               </svg>
-              <i class="fas fa-award"></i>
             </div>
             <h6 class="text-xl font-semibold text-black">{box1title}</h6>
-            <p class="mt-2 mb-4 text-gray-600">
-              {box1info}
-            </p>
+            <p class="mt-2 mb-4 text-gray-600">{box1info}</p>
           </div>
         </div>
       </div>
+
       <div class="w-full md:w-4/12 px-4 text-center text-black">
         <div
           class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg"
-          >
+        >
           <div class="px-4 py-5 flex-auto">
             <div
               class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-blue-400"
+            >
+              <svg
+                fill="#000000"
+                version="1.1"
+                id="Layer_1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                width="24px"
+                height="24px"
+                viewBox="0 0 92 92"
+                enable-background="new 0 0 92 92"
+                xml:space="preserve"
               >
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                <path d="M21 8.156l-3-3v-3.156h3v6.156zm-.391 5.844h-17.109l8.5-8.469 8.609 8.469zm-6.609-4.001c0-1.104-.895-2-2-2-1.104 0-2 .896-2 2 0 1.105.896 2.001 2 2.001 1.105 0 2-.896 2-2.001zm6 7.001c.553 0 1-.448 1-1s-.447-1-1-1h-6v5h6c.553 0 1-.448 1-1s-.447-1-1-1h-3v-1h3zm-16 1c-.553 0-1 .448-1 1s.447 1 1 1h6v-5h-6c-.553 0-1 .448-1 1s.447 1 1 1h3v1h-3zm16 3h-16c-.553 0-1 .448-1 1s.447 1 1 1h16c.553 0 1-.448 1-1s-.447-1-1-1zm3.676-8.506l-11.676-11.494-11.676 11.494c-.215.197-.324.466-.324.737 0 .552.448 1 1 1 .241 0 .483-.087.676-.263l10.324-10.156 10.324 10.156c.192.176.435.263.676.263.552 0 1-.448 1-1 0-.271-.109-.54-.324-.737z"/>
+                <path
+                  id="XMLID_1265_"
+                  d="M35.4,54.3c11.7,0,21.2-9.5,21.2-21.1c0-11.7-9.5-21.1-21.2-21.1s-21.2,9.5-21.2,21.1
+                          C14.3,44.8,23.8,54.3,35.4,54.3z M35.4,20c7.3,0,13.2,5.9,13.2,13.1c0,7.2-5.9,13.1-13.2,13.1s-13.2-5.9-13.2-13.1
+                          C22.3,25.9,28.2,20,35.4,20z M45,56.2c-1.1-0.3-2.3-0.2-3.3,0.4l-6.3,3.8l-6.3-3.8c-1-0.6-2.2-0.7-3.3-0.4C19.7,58.2,0,65.3,0,76
+                          c0,2.2,1.8,4,4,4h62.8c2.2,0,4-1.8,4-4C70.8,65.3,51.1,58.2,45,56.2z M11.2,72c3.4-2.6,9.1-5.4,15.3-7.6l6.8,4.1
+                          c1.3,0.8,2.9,0.8,4.1,0l6.8-4.1c6.2,2.1,11.9,5,15.3,7.6H11.2z M91,69c0,1.7-1.3,3-3,3H74.6c-1.7,0-3-1.3-3-3s1.3-3,3-3h8.9
+                          c-1.5-2-3.9-3.6-6.9-5.2c-1.5-0.8-2-2.6-1.2-4c0.8-1.5,2.6-2,4.1-1.2C83.8,57.9,91,62.8,91,69z M74.2,42.6c0-4.4-3.6-7.9-7.9-7.9
+                          c-1.1,0-2.1,0.2-3.1,0.6c-1.5,0.6-3.3-0.1-3.9-1.6c-0.6-1.5,0.1-3.3,1.6-3.9c1.7-0.7,3.5-1.1,5.4-1.1c7.7,0,13.9,6.2,13.9,13.9
+                          s-6.3,13.9-13.9,13.9c-4,0-7.8-1.7-10.4-4.7c-1.1-1.2-1-3.1,0.3-4.2c1.2-1.1,3.1-1,4.2,0.3c1.5,1.7,3.7,2.7,6,2.7
+                          C70.6,50.5,74.2,46.9,74.2,42.6z"
+                />
               </svg>
-              <i class="fas fa-retweet"></i>
             </div>
             <h6 class="text-xl font-semibold">{box2title}</h6>
-            <p class="mt-2 mb-4 text-gray-600">
-              {box2info}
-            </p>
+            <p class="mt-2 mb-4 text-gray-600">{box2info}</p>
           </div>
         </div>
       </div>
+
       <div class="pt-6 w-full md:w-4/12 px-4 text-center">
         <div
           class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg"
-          >
+        >
           <div class="px-4 py-5 flex-auto">
             <div
               class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-green-400"
+            >
+              <svg
+                height="24px"
+                width="24px"
+                version="1.1"
+                id="_x32_"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 0 512 512"
+                xml:space="preserve"
               >
-              <svg fill="#000000" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
-                width="24" height="24" viewBox="0 0 60.705 60.705"
-                xml:space="preserve">
-                <path d="M41.621,5.882c-2.965-1.306-6.748-1.941-11.565-1.941h-6.87v-1.58C23.185,1.056,22.127,0,20.824,0h-9.571
-                  C9.949,0,8.892,1.058,8.892,2.361v20.622c0,1.304,1.058,2.36,2.361,2.36h9.571c1.304,0,2.361-1.057,2.361-2.36v-1.279h0.914V29.7
-                  h-1.935c-1.304,0-2.361,1.057-2.361,2.36v26.283c0,1.305,1.058,2.361,2.361,2.361h16.376c1.306,0,2.361-1.059,2.361-2.361V32.061
-                  c0-1.304-1.059-2.357-2.361-2.357h-1.936v-7.931c3.195,0.188,6.365,0.998,11.229,5.563c0.447,0.419,1.027,0.64,1.617,0.64
-                  c0.315,0,0.637-0.064,0.938-0.194c0.862-0.374,1.424-1.228,1.424-2.168v-4.311C51.814,14.858,46.441,8.005,41.621,5.882z
-                  M36.18,55.984H24.527V34.423h1.934h7.785h1.935V55.984z M28.822,29.7v-7.208h3.061V29.7H28.822z M34.705,16.98h-13.88
-                  c-1.305,0-2.362,1.058-2.362,2.362v1.277h-4.847V4.721h4.847v1.581c0,1.306,1.058,2.362,2.362,2.362h9.23
-                  c4.146,0,7.311,0.504,9.662,1.54c3.162,1.394,6.949,6.201,7.342,10.399C42.462,17.432,38.81,17.061,34.705,16.98z"/>
+                <style type="text/css">
+                  .st0 {
+                    fill: #000000;
+                  }
+                </style>
+                <g>
+                  <path
+                    class="st0"
+                    d="M256,0C114.608,0.018,0.018,114.598,0,256c0.018,141.392,114.608,255.982,256,256
+                          c141.393-0.018,255.982-114.608,256-256C511.982,114.598,397.393,0.018,256,0z M404.696,404.697
+                          c-38.134,38.089-90.554,61.571-148.696,61.589c-58.143-0.018-110.571-23.5-148.697-61.589
+                          C69.214,366.572,45.724,314.143,45.714,256c0.009-58.143,23.5-110.571,61.589-148.697C145.429,69.214,197.857,45.724,256,45.714
+                          c58.143,0.009,110.563,23.5,148.696,61.589c38.089,38.126,61.58,90.554,61.589,148.697
+                          C466.277,314.143,442.786,366.572,404.696,404.697z"
+                  />
+                  <polygon
+                    class="st0"
+                    points="185.169,165.33 185.169,373.027 211.134,373.027 211.134,282.16 347.429,282.16 347.429,165.33 
+                          211.134,165.33 "
+                  />
+                </g>
               </svg>
-              <i class="fas fa-fingerprint"></i>
             </div>
             <h6 class="text-xl font-semibold text-black">{box3title}</h6>
-            <p class="mt-2 mb-4 text-gray-600">
-              {box3info}
-            </p>
+            <p class="mt-2 mb-4 text-gray-600">{box3info}</p>
           </div>
         </div>
       </div>
     </div>
+
     <div class="flex flex-wrap items-center mt-12">
       <div class="w-full md:w-5/12 px-4 mr-auto ml-auto">
         <h3 class="text-3xl mb-2 font-semibold leading-normal text-gray-700">
-          About our clinic 
+          About our clinic
         </h3>
-        <p
-          class="text-xl font-bold leading-relaxed mt-4 mb-4 text-gray-700"
-          >
-          Location:  Fuentes del valle comedor, tecate México <br><br>
-          Statistics: We see up to 30 patients during each clinic session, providing them with essential medical services that they might not otherwise have access to. <br><br>
-          Our doctors/providers: Our doctor Dr. Boucher and nurse practitioner Nancy  have a combined experience of over 50 years in family medicine. They volunteer their time every single month and teach students while they practice their medicine. 
-                </div>
-     
-     
+        <p class="text-xl leading-relaxed mt-4 mb-4 text-gray-700">
+          <span class="font-bold">Location:</span> <span class="font-medium">Fuentes del valle comedor, Tecate México</span> <br /><br />
+          <span class="font-bold">Statistics:</span> <span class="font-medium">We see up to 30 patients during each clinic session,
+          providing them with essential medical services that they might not
+          otherwise have access to.</span> <br /><br />
+          <span class="font-bold">Our doctors/providers:</span> <span class="font-medium">Our doctor Dr. Boucher and nurse practitioner
+          Nancy have a combined experience of over 50 years in family medicine.
+          They volunteer their time every single month and teach students while
+          they practice their medicine.</span>
+        </p>
+        
+      </div>
+
       <div class="w-full md:w-4/12 px-4 mr-auto ml-auto">
         <div
           class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-slate-800"
-          >
-          <div class="object-contain h-full w-full">
-
-          </div>
+        >
+          <div class="object-contain h-full w-full"></div>
           <blockquote class="relative p-8 mb-4">
             <svg
-              preserveAspectRatio="none"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 583 95"
-              class="absolute left-0 w-full block"
-              style="height: 95px; top: -94px;"
-              >
+                preserveAspectRatio="none"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 583 95"
+                class="absolute left-0 w-full block"
+                style="height: 95px; top: -94px;"
+            ></svg>
             
-            </svg>
+            <h3 class="text-xl font-bold text-gray-700 mb-4">Join today</h3> <!-- Updated this line -->
             
-           More coming soon
-
+            <p class="text-gray-700"> <!-- Updated this line -->
+                By joining the Flying Samaritans, you will gain invaluable experience in medicine, public service, and nonprofit work. This is a unique opportunity to apply your academic knowledge in real-world settings, make a tangible difference in people’s lives, and find deeply fulfilling work that goes beyond the classroom.
+            </p>
+        </blockquote>
+        
+        
         </div>
       </div>
     </div>
   </div>
+  
 </section>
+
 <style></style>
