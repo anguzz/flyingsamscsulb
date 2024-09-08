@@ -7,13 +7,13 @@
 </script>
 
 <div>
-  <div class="bg-indigo-400">
+  <div class="bg-blue-500">
     <nav
       class="container px-6 py-8 mx-auto md:flex md:justify-between md:items-center"
     >
       <div class="flex items-center justify-between">
         <a
-          class="text-xl font-bold text-gray-100 md:text-2xl hover:text-green-400"
+          class="text-xl font-bold text-gray-100 md:text-2xl hover:text-red-300"
           href="https://www.instagram.com/flying_samaritans_csulb/"
           >Flying Sams CSULB
         </a>
@@ -45,9 +45,9 @@
       <div
         class="flex-col mt-8 space-y-4 md:flex md:space-y-0 md:flex-row md:items-center md:space-x-10 md:mt-0 {showMenu ? 'flex' : 'hidden'}"
       >
-        <a class="text-gray-100 font-bold hover:text-green-300" href="#home">Home</a>
-        <a class="text-gray-100 font-bold hover:text-green-300" href="#about">About</a>
-        <a class="text-gray-100 font-bold hover:text-green-300" href="#calendar">Calendar</a>
+        <a class="text-gray-100 font-bold hover:text-red-300" href="#home">Home</a>
+        <a class="text-gray-100 font-bold hover:text-red-300" href="#about">About</a>
+        <a class="text-gray-100 font-bold hover:text-red-300" href="#calendar">Calendar</a>
       </div>
     </nav>
   </div>
