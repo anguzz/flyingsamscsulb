@@ -1,14 +1,14 @@
 <script lang="ts">
   import { onDestroy } from "svelte";
- // outdated  import { animateScroll } from "svelte-scrollto-element";
+  import { animateScroll } from "svelte-scrollto-element";
   import { shadow } from "$lib/utils/constants";
   import { fade, slide } from "svelte/transition";
 
- /* animateScroll.setGlobalOptions({
+  animateScroll.setGlobalOptions({
     onStart: (element, offset) => {
       open = false;
     },
-  }); */
+  });
 
   interface Route {
     id: string;
@@ -30,11 +30,12 @@
       route: "/about",
       name: "about",
       title: "About",
-    },{
+    },
+    {
       id: "#calendar",
       route: "/calendar",
       name: "calendar",
-      title: "Calender",
+      title: "Calendar",
     },
   ];
   const menuDuration = 200;
