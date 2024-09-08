@@ -21,7 +21,7 @@
   let showCaptions = false;
 </script>
 
-<Anchor id="services" />
+<Anchor id="about" />
 
 <section class="pb-20 relative block bg-grey-900">
   <div
@@ -180,7 +180,7 @@
 
       <div class="w-full md:w-4/12 px-4 mr-auto ml-auto">
         <div
-          class="relative flex flex-col min-w-0 break-words bg-blue-200 w-full mb-6 shadow-lg rounded-lg bg-blue-300"
+          class="relative flex flex-col min-w-0 break-words bg-blue-200 w-full mb-6 shadow-lg rounded-lg bg-blue-200"
         >
           <div class="object-contain h-full w-full"></div>
           <blockquote class="relative p-8 mb-4">
