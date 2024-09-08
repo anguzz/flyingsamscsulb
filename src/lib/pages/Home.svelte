@@ -5,7 +5,7 @@
   import { neutralBackground } from "$lib/utils/constants";
 
   let color = "text-grey-200"; 
-  export let backgroundClass = neutralBackground;
+  export let backgroundClass = "bg-amber-100";
 
 </script>
 <Page id="home"  {backgroundClass}> 

@@ -29,12 +29,12 @@
     style="height: 80px;"
   ></div>
 </section>
-<section class="pb-20 pt-2 bg-gray-300 -mt-24">
+<section class="pb-20 pt-2 bg-amber-100 -mt-24">
   <div class="container mx-auto px-4">
     <div class="flex flex-wrap">
       <div class="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center">
         <div
-          class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg"
+          class="relative flex flex-col min-w-0 break-words bg-blue-200 w-full mb-8 shadow-lg rounded-lg"
         >
           <div class="px-4 py-5 flex-auto">
             <div
@@ -74,7 +74,7 @@
 
       <div class="w-full md:w-4/12 px-4 text-center text-black">
         <div
-          class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg"
+          class="relative flex flex-col min-w-0 break-words bg-blue-200 w-full mb-8 shadow-lg rounded-lg"
         >
           <div class="px-4 py-5 flex-auto">
             <div
@@ -114,7 +114,7 @@
 
       <div class="pt-6 w-full md:w-4/12 px-4 text-center">
         <div
-          class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg"
+          class="relative flex flex-col min-w-0 break-words bg-blue-200 w-full mb-8 shadow-lg rounded-lg"
         >
           <div class="px-4 py-5 flex-auto">
             <div
@@ -180,7 +180,7 @@
 
       <div class="w-full md:w-4/12 px-4 mr-auto ml-auto">
         <div
-          class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-slate-800"
+          class="relative flex flex-col min-w-0 break-words bg-blue-200 w-full mb-6 shadow-lg rounded-lg bg-slate-800"
         >
           <div class="object-contain h-full w-full"></div>
           <blockquote class="relative p-8 mb-4">
