@@ -24,7 +24,4 @@
 
 <Home />
 <About backgroundClass={neutralBackground} />
-
 <Calendar  />
-
-<Footer  />
