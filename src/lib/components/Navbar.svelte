@@ -7,7 +7,7 @@
 </script>
 
 <div>
-  <div class="bg-red-950">
+  <div class="bg-red-900">
     <nav
       class="container px-6 py-8 mx-auto md:flex md:justify-between md:items-center"
     >
