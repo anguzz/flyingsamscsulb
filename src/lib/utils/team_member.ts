@@ -1,4 +1,4 @@
-export const boardInfo = [
+export const team_member_info = [
     {
         id: 0,
         name: "Gianni Tello",

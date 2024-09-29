@@ -48,6 +48,8 @@
         <a class="text-gray-100 font-bold hover:text-red-300" href="#home">Home</a>
         <a class="text-gray-100 font-bold hover:text-red-300" href="#about">About</a>
         <a class="text-gray-100 font-bold hover:text-red-300" href="#calendar">Calendar</a>
+        <a class="text-gray-100 font-bold hover:text-red-300" href="#team">Team</a>
+
       </div>
     </nav>
   </div>

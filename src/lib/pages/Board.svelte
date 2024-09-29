@@ -1,16 +1,16 @@
 <script lang="ts">
     import Page from "$lib/components/Page.svelte";
-    import { boardInfo as board } from "$lib/utils/board";
+    import { team_member_info as team_member } from "$lib/utils/team_member";
 
     export let backgroundClass = 'bg-amber-100';
 </script>
 
-<Page id="Board" {backgroundClass}>
+<Page id="team" {backgroundClass}>
     <div class="text-center my-4 text-4xl font-bold text-red-400">
         Meet our team
     </div>
     <div class="row">
-        {#each board as {name, img, position}, i}
+        {#each team_member as {name, img, position}, i}
         <div class="polaroid">
             <div class="photo">
                 <img src="{img}" alt="board image">
