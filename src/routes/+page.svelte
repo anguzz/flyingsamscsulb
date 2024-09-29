@@ -24,5 +24,6 @@
 
 <Home />
 <About  />
-
 <Calendar  />
+<Board />
+

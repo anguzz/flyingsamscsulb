@@ -1,170 +1,80 @@
 <script lang="ts">
     import Page from "$lib/components/Page.svelte";
-    import Text from "$lib/components/Text.svelte";
     import { boardInfo as board } from "$lib/utils/board";
-    import { primaryBackground } from "$lib/utils/constants";
-  export let backgroundClass = 'bg-amber-100';
-    
-    
-        // @ts-ignore
-        let selected: number | null;
-    // @ts-ignore
-            $:console.log(selected)
-        
-        let cardBackShowing = false;
-        
-        // @ts-ignore
-        const toggleBackFront = (e) => {
-            // if same card clicked twice to toggle front and back
-            // @ts-ignore
-            if (selected === Number(e.target.dataset.cardId)) {
-                selected = null;
-                cardBackShowing = !cardBackShowing;
-            } else {
-                cardBackShowing = !cardBackShowing;
-                selected = Number(e.target.dataset.cardId)
-            }
-        }
-    
-    </script>
-      
-    <Page id="Board" {backgroundClass}>
-    <div id="bg">
-        <div class="text-center">
-            <h1 class="text-5xl m-6 font-light">  Meet our team  </h1>
-          </div>
-        <div class="row"> {#each board as {name,img,text, position,}, i}
-          
-            <div class="flip-box" >
-                <div class="flip-box-inner" class:show-back={selected === i} >
-                    <div class="flip-box-front card" >
-                        <div class="img-container">
-                            <img src=/{img}  alt="board image" on:click={toggleBackFront} data-card-id={i}>
-                            </div>
-                        </div>
-                        
-                        <div class="flip-box-back container" alt="board image" on:click={toggleBackFront} data-card-id={i}>
-                            <div class="title" > {name} </div>
-                    
-                            <div class="text" > {text} </div>
-                            
-                            <div class="title" > {position} </div>
-                            </div>
-                        </div>
-                    </div>
-            {/each}
-          
-                </div>
-    
-        </div>
-    </Page>
 
-    <style>   
-    
-      #bg {
-      padding-top:5rem;
-      height: fit-content; 
-      
-      }
-      /* if content exceeds height use cover */
-      
-      .img-container{
-            margin: 0 0rem 1rem;
-            width: 20rem;
-            height: 24rem;
-            content:center;
-            overflow:hidden;
-            background: #212224;
-            border-radius: 10px;
-            
-        }	
-        .img-container:hover{
-      box-shadow: 5px 10px 15px #76BBFC;
-        }
-     
-        
-        .row {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-        /* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
-        
-        .flip-box {
-            background-color: transparent;
-            width: 20rem;
-            height: 24rem;
-            margin-left:.3rem;
-            margin-right:.3rem;
-            perspective: 1000px; /* Remove this if you don't want the 3D effect */
-            margin-bottom:4rem;
-            border-radius: 10px;
-        }
-        /*  container to position the front & back side */
-        .flip-box-inner {
-            position: relative;
-            width: 100%;
-            height: 100%;
-            text-align: center;
-            transition: transform 0.8s;
-            transform-style: preserve-3d;
-            border-radius: 10px;
-        }
-    
-    
-        .show-back {
-            transform: rotateY(180deg);
-        }
-    
-        /* Position the front and back side */
-        .flip-box-front, .flip-box-back {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            -webkit-backface-visibility: hidden; /* Safari */
-            backface-visibility: hidden;
-    
-        }
-    
-        /* Style the front side */
-        .flip-box-front {
-            background-color: rgb(255, 251, 251);
-            color:black;
-            border-radius: 10px;
-        }
-    
-        /* Style the back side */
-        .flip-box-back {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            background-color: #212224;
-            border-color: #6B7280;
-            color: #7EACC0;
-            width: 20rem;
-            height: 24rem;
-            margin: 0rem .4rem;
-            transform: rotateY(180deg) translateX(6px);
-            border-radius: 10px;
-            
-        }
-        .flip-box-back:hover{
-            box-shadow: 5px 10px 15px #76BBFC;
-        }
-    
-        .text-5xl{
-      font-family: "MedievalSharp";
+    export let backgroundClass = 'bg-amber-100';
+</script>
+
+<Page id="Board" {backgroundClass}>
+    <div class="text-center my-4 text-4xl font-bold text-red-400">
+        Meet our team
+    </div>
+    <div class="row">
+        {#each board as {name, img, position}, i}
+        <div class="polaroid">
+            <div class="photo">
+                <img src="{img}" alt="board image">
+            </div>
+            <div class="info">
+                <div class="name">{name}</div>
+                <div class="position">{position}</div>
+            </div>
+        </div>
+        {/each}
+    </div>
+</Page>
+
+<style>
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0 auto;
     }
-    .text{
-        padding:10px;
+
+    .polaroid {
+        width: 256px;
+        background-color: white;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        margin: 10px;
+        text-align: center;
+      
+        overflow: hidden;
+        font-family: 'Lucida Handwriting', cursive;
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     }
-        /*----------text box for colors----------------*/
-    
-             
-    
-    
-        .card {
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-        }
-    
-    </style>
+
+    .polaroid:hover {
+        transform: scale(1.45); /* Slightly scale up the card */
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Increase shadow for lifting effect */
+        z-index: 10; /* Ensure the hovered card is above others */
+    }
+
+    .polaroid .photo {
+        padding: 15px; 
+        background: #fff;
+    }
+
+    .polaroid img {
+        width: 100%;
+        display: block;
+        border-radius: 5px; 
+        transition: transform 0.3s ease-in-out; /* Smooth transition for image zoom */
+    }
+
+    .polaroid:hover img {
+        transform: scale(1.1); /* Zoom into the image */
+    }
+
+    .polaroid .info {
+        padding: 10px;
+        color: black;
+    }
+
+    .name  {
+        font-weight: 600;
+    }
+    .position  {
+        font-weight: 400;
+    }
+</style>
