@@ -3,6 +3,8 @@
   import Page from "$lib/components/Page.svelte";
   import Socials from "$lib/components/Socials.svelte";
   import { neutralBackground } from "$lib/utils/constants";
+  import { quintInOut } from "svelte/easing";
+  import { fly } from "svelte/transition";
 
   let color = "text-grey-200"; 
   export let backgroundClass = "bg-amber-100";

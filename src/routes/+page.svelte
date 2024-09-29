@@ -9,6 +9,8 @@
   import About from "$lib/pages/About.svelte";
   import Calendar from "$lib/pages/Calendar.svelte";
   import Board from "$lib/pages/Board.svelte"
+  import Instagram from "$lib/pages/Instagram.svelte"
+
   import Footer from "$lib/pages/Footer.svelte";
 
 /* basic colors at  https://tailwindcss.com/docs/customizing-colors   more at  https://hypercolor.dev/   */ 
