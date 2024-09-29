@@ -180,7 +180,7 @@
 
       <div class="w-full md:w-4/12 px-4 mr-auto ml-auto">
         <div
-          class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-red-800"
+          class="relative flex flex-col min-w-0 break-words bg-red-800 w-full mb-6 shadow-lg rounded-lg bg-red-800"
           >
           <div class="object-contain h-full w-full">
 
