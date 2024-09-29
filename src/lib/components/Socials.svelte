@@ -1,12 +1,12 @@
 <script lang="ts">
     import IconButton from "$lib/components/IconButton.svelte";
 
-    export let color = "text-blue-300";
-    let hover = "sm:hover:text-blue-300";
+    export let color = "text-red-700";
+    let hover = "sm:hover:text-red-300";
 
     let colorClass = `${color} ${hover}`;
     let spacingClass = "mx-5";
-    export let sizeClass = "h-12 w-11";
+    export let sizeClass = "h-12 w-10";
   
 
     
@@ -36,6 +36,7 @@
   <IconButton link={icons.instagram.link} name={icons.instagram.name}>
     <svg
     aria-hidden="true"
+    class="{colorClass} {spacingClass}"
     focusable="false"
     xmlns="http://www.w3.org/2000/svg"
     width="35"

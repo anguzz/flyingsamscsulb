@@ -1,5 +1,7 @@
 <script>
     let members = 'members.png';
+    import Socials from "$lib/components/Socials.svelte";
+
 </script>
 
 <div
@@ -11,6 +13,7 @@
         <!-- below responsible for formatting text next to image-->
         <div class="relative mb-2 text-3xl font-bold text-red-600 dark:text-red-600">
             <div class="relative"> Flying Samaritans CSULB </div>
+            <Socials/>
         </div>
 
         <div>
