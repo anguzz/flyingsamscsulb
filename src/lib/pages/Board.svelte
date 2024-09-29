@@ -6,7 +6,7 @@
 </script>
 
 <Page id="team" {backgroundClass}>
-    <div class="text-center my-4 text-4xl font-bold text-red-400">
+    <div class="text-center my-4 text-4xl font-bold text-red-700">
         Meet our team
     </div>
     <div class="row">
