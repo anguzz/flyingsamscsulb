@@ -9,7 +9,7 @@
         class="flex max-w-[94%] flex-col items-center justify-center gap-2 text-center text-lg font-semibold italic text-red-700 dark:text-red-500 md:max-w-[40%]"
     >
         <!-- below responsible for formatting text next to image-->
-        <div class="relative mb-2 text-3xl font-bold text-red-400 dark:text-red-400">
+        <div class="relative mb-2 text-3xl font-bold text-red-600 dark:text-red-600">
             <div class="relative"> Flying Samaritans CSULB </div>
         </div>
 
