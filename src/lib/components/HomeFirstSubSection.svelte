@@ -36,7 +36,7 @@
                 <img src="{members}" />
             </div>
             <div
-                class="absolute -bottom-52 right-2 left-2 z-[9] rounded bg-red-950 p-4 transition-all duration-500 group-hover:bottom-2 group-hover:bg-red-950 group-hover:text-white"
+                class="absolute -bottom-52 right-2 left-2 z-[9] rounded bg-red-950 p-4 transition-all duration-500 group-hover:bottom-2 group-hover:bg-red-800 group-hover:text-white"
             >
                 <p class="text-white group-hover:text-white">
                     April Clinic 2024 &hearts;
