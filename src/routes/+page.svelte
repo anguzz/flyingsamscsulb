@@ -8,7 +8,7 @@
   //import Events from "$lib/pages/Events.svelte";
   import About from "$lib/pages/About.svelte";
   import Calendar from "$lib/pages/Calendar.svelte";
-
+  import Board from "$lib/pages/Board.svelte"
   import Footer from "$lib/pages/Footer.svelte";
 
 /* basic colors at  https://tailwindcss.com/docs/customizing-colors   more at  https://hypercolor.dev/   */ 
@@ -23,5 +23,6 @@
 />
 
 <Home />
-<About backgroundClass={neutralBackground} />
+<About  />
+
 <Calendar  />
