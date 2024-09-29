@@ -34,11 +34,11 @@
     <div class="flex flex-wrap">
       <div class="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center">
         <div
-          class="relative flex flex-col min-w-0 break-words bg-blue-200 w-full mb-8 shadow-lg rounded-lg"
+          class="relative flex flex-col min-w-0 break-words bg-red-900 w-full mb-8 shadow-lg rounded-lg"
         >
           <div class="px-4 py-5 flex-auto">
             <div
-              class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-red-400"
+              class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-white"
             >
               <svg
                 fill="#000000"
@@ -66,19 +66,19 @@
                 </g>
               </svg>
             </div>
-            <h6 class="text-xl font-semibold text-black">{box1title}</h6>
-            <p class="mt-2 mb-4 text-gray-600">{box1info}</p>
+            <h6 class="text-xl font-semibold text-white">{box1title}</h6>
+            <p class="mt-2 mb-4 text-white">{box1info}</p>
           </div>
         </div>
       </div>
 
-      <div class="w-full md:w-4/12 px-4 text-center text-black">
+      <div class="w-full md:w-4/12 px-4 text-center text-white">
         <div
-          class="relative flex flex-col min-w-0 break-words bg-blue-200 w-full mb-8 shadow-lg rounded-lg"
+          class="relative flex flex-col min-w-0 break-words bg-red-900 w-full mb-8 shadow-lg rounded-lg"
         >
           <div class="px-4 py-5 flex-auto">
             <div
-              class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-blue-400"
+              class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-white"
             >
               <svg
                 fill="#000000"
@@ -107,18 +107,18 @@
               </svg>
             </div>
             <h6 class="text-xl font-semibold">{box2title}</h6>
-            <p class="mt-2 mb-4 text-gray-600">{box2info}</p>
+            <p class="mt-2 mb-4 text-white">{box2info}</p>
           </div>
         </div>
       </div>
 
       <div class="pt-6 w-full md:w-4/12 px-4 text-center">
         <div
-          class="relative flex flex-col min-w-0 break-words bg-blue-200 w-full mb-8 shadow-lg rounded-lg"
+          class="relative flex flex-col min-w-0 break-words bg-red-900 w-full mb-8 shadow-lg rounded-lg"
         >
           <div class="px-4 py-5 flex-auto">
             <div
-              class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-green-400"
+              class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-white"
             >
               <svg
                 height="24px"
@@ -153,8 +153,8 @@
                 </g>
               </svg>
             </div>
-            <h6 class="text-xl font-semibold text-black">{box3title}</h6>
-            <p class="mt-2 mb-4 text-gray-600">{box3info}</p>
+            <h6 class="text-xl font-semibold text-white">{box3title}</h6>
+            <p class="mt-2 mb-4 text-white">{box3info}</p>
           </div>
         </div>
       </div>
@@ -180,7 +180,7 @@
 
       <div class="w-full md:w-4/12 px-4 mr-auto ml-auto">
         <div
-          class="relative flex flex-col min-w-0 break-words bg-blue-200 w-full mb-6 shadow-lg rounded-lg bg-blue-200"
+          class="relative flex flex-col min-w-0 break-words bg-red-200 w-full mb-6 shadow-lg rounded-lg bg-red-900"
         >
           <div class="object-contain h-full w-full"></div>
           <blockquote class="relative p-8 mb-4">
@@ -192,9 +192,9 @@
                 style="height: 95px; top: -94px;"
             ></svg>
             
-            <h3 class="text-xl font-bold text-gray-700 mb-4">Join today</h3> <!-- Updated this line -->
+            <h3 class="text-xl font-bold text-white mb-4">Join today</h3> <!-- Updated this line -->
             
-            <p class="text-gray-700"> <!-- Updated this line -->
+            <p class="text-white"> <!-- Updated this line -->
                 By joining the Flying Samaritans, you will gain invaluable experience in medicine, public service, and nonprofit work. This is a unique opportunity to apply your academic knowledge in real-world settings, make a tangible difference in people’s lives, and find deeply fulfilling work that goes beyond the classroom.
             </p>
         </blockquote>
