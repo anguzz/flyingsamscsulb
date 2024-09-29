@@ -21,7 +21,7 @@
         <div on:click={toggleNavbar} class="flex md:hidden">
           <button
             type="button"
-            class="text-gray-100 hover:text-green-300 focus:outline-none focus:text-green-300"
+            class="text-gray-100 hover:text-red-300 focus:outline-none focus:text-red-300"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
