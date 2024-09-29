@@ -2,8 +2,7 @@
   import Page from "$lib/components/Page.svelte";
   import Text from "$lib/components/Text.svelte";
   import { primaryBackground } from "$lib/utils/constants";
-  import Anchor from "$lib/components/Anchor.svelte";
-  export let backgroundClass = primaryBackground;
+  export let backgroundClass = 'bg-amber-100';
   
   let box1title = "Student run";
   let box1info =
@@ -21,18 +20,11 @@
   let showCaptions = false;
 </script>
 
-<Anchor id="about" />
+<Page id="about" {backgroundClass}>
 
-<section class="pb-20 relative block bg-grey-900">
-  <div
-    class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
-    style="height: 80px;"
-  ></div>
-</section>
-<section class="pb-20 pt-2 bg-amber-100 -mt-24">
   <div class="container mx-auto px-4">
     <div class="flex flex-wrap">
-      <div class="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center">
+      <div class="lg:pt-12 pt-4 w-full md:w-4/12 px-4 text-center">
         <div
           class="relative flex flex-col min-w-0 break-words bg-red-800 w-full mb-8 shadow-lg rounded-lg"
         >
@@ -204,6 +196,6 @@ By joining the Flying Samaritans, you will gain invaluable experience in medicin
     </div>
   </div>
   
-</section>
+</Page>
 
 <style></style>
