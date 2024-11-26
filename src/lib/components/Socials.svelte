@@ -5,7 +5,7 @@
     let hover = "sm:hover:text-red-300";
 
     let colorClass = `${color} ${hover}`;
-    let spacingClass = "mx-5";
+    let spacingClass = "mx-3";
     export let sizeClass = "h-12 w-10";
   
 
