@@ -2,7 +2,7 @@
   import Page from "$lib/components/Page.svelte";
   import Text from "$lib/components/Text.svelte";
   import { primaryBackground } from "$lib/utils/constants";
-  export let backgroundClass = 'bg-amber-100';
+  export let backgroundClass = 'bg-white';
   
   let box1title = "Student run";
   let box1info =
@@ -152,12 +152,12 @@
       </div>
     </div>
 
-    <div class="flex flex-wrap items-center mt-12">
-      <div class="w-full md:w-5/12 px-4 mr-auto ml-auto">
-        <h3 class="text-3xl mb-2 font-semibold leading-normal text-gray-700">
+    <div class="flex flex-wrap items-center mt-12 ">
+      <div class="w-full md:w-5/12 px-4 mr-auto ml-auto bg-red-800 rounded-lg">
+        <h3 class="text-3xl mb-2 font-semibold leading-normal text-white ">
           About our clinic
         </h3>
-        <p class="text-xl leading-relaxed mt-4 mb-4 text-gray-700">
+        <p class="text-xl leading-relaxed mt-4 mb-4 text-white">
           <span class="font-bold">Location:</span> <span class="font-medium">Fuentes del valle comedor, Tecate México</span> <br /><br />
           <span class="font-bold">Statistics:</span> <span class="font-medium">We see up to 30 patients during each clinic session,
           providing them with essential medical services that they might not

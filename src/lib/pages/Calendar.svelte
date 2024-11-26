@@ -3,7 +3,7 @@
     import Page from "$lib/components/Page.svelte";
     import { primaryBackground } from "$lib/utils/constants";
 
-    export let backgroundClass = 'bg-amber-100';
+    export let backgroundClass = 'bg-white';
 
 
   </script>

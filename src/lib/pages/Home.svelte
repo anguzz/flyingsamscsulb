@@ -7,7 +7,7 @@
   import { fly } from "svelte/transition";
 
   let color = "text-grey-200"; 
-  export let backgroundClass = "bg-amber-100";
+  export let backgroundClass = 'bg-white';
 
 </script>
 <Page id="home"  {backgroundClass}> 

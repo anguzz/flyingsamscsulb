@@ -2,14 +2,14 @@
     import Page from "$lib/components/Page.svelte";
     import { team_member_info as team_member } from "$lib/utils/team_member";
 
-    export let backgroundClass = 'bg-amber-100';
+    export let backgroundClass = 'bg-white';
 </script>
 
 <Page id="team" {backgroundClass}>
-    <div class="text-center my-4 text-4xl font-bold text-red-700">
+    <div class="text-center my-4 text-4xl font-bold text-red-700 ">
         Meet our team
     </div>
-    <div class="row">
+    <div class="row bg-red-800 rounded-lg p-14">
         {#each team_member as {name, img, position}, i}
         <div class="polaroid">
             <div class="photo">
