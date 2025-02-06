@@ -7,6 +7,8 @@
   import Home from "$lib/pages/Home.svelte";
   //import Events from "$lib/pages/Events.svelte";
   import About from "$lib/pages/About.svelte";
+  import Shop from "$lib/pages/Shop.svelte";
+
   import Calendar from "$lib/pages/Calendar.svelte";
   import Board from "$lib/pages/Board.svelte"
   import Instagram from "$lib/pages/Instagram.svelte"
@@ -25,6 +27,8 @@
 />
 
 <Home />
+<Shop  />
+
 <About  />
 <Calendar  />
 <Board />

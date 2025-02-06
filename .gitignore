@@ -10,3 +10,4 @@ import.sh
 # env files
 .envrc
 *.local
+.env
