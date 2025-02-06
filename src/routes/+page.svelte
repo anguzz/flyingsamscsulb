@@ -7,7 +7,7 @@
   import Home from "$lib/pages/Home.svelte";
   //import Events from "$lib/pages/Events.svelte";
   import About from "$lib/pages/About.svelte";
-  import Stripe from "$lib/pages/Payment.svelte";
+  import Shop from "$lib/pages/Shop.svelte";
 
   import Calendar from "$lib/pages/Calendar.svelte";
   import Board from "$lib/pages/Board.svelte"
@@ -27,7 +27,7 @@
 />
 
 <Home />
-<Stripe  />
+<Shop  />
 
 <About  />
 <Calendar  />
