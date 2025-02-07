@@ -5,6 +5,7 @@
 
   export let backgroundClass = 'bg-white';
   import Page from "$lib/components/Page.svelte";
+  let img_therapy = 'img_therapy.png';
 
   onMount(() => {
     // Inject Stripe's script if not already injected
@@ -23,7 +24,17 @@
 
 <Page id="Shop"  {backgroundClass}> 
   <div class="text-center">
-  <h1 class="text-5xl m-6 font-medium text-red-600">  Support us </h1>
+    
+
+    <img src={img_therapy} alt="Centered Image" width = 600
+    style="
+      display: block; 
+      margin: 0 auto; 
+      max-width: 100%; 
+      height: auto;
+    ">
+ 
+
 
 
   <!-- once more catalog options become available need to make this an object grid -->

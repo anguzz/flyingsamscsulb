@@ -1,17 +1,19 @@
 <script>
     let members = 'members.png';
+    let landing_quote ='landing_quote.png'
     import Socials from "$lib/components/Socials.svelte";
 
 </script>
 
 <div
-    class="mt-12 flex w-full flex-col items-center justify-around gap-5 md:flex-row md:gap-0"
+    class="mt-3 flex w-full flex-col items-center justify-around gap-5 md:flex-row md:gap-0"
 >
     <div
         class="flex max-w-[94%] flex-col items-center justify-center gap-2 text-center text-lg font-semibold italic text-red-700 dark:text-red-500 md:max-w-[40%]"
     >
         <!-- below responsible for formatting text next to image-->
         <div class="relative mb-2 text-3xl font-bold text-red-600 dark:text-red-600">
+                <img src="{landing_quote}" width =500  />
             <div class="relative mb-2"> Flying Samaritans CSULB </div>
             <Socials/>
         </div>
