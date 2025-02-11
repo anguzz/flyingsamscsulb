@@ -1,6 +1,6 @@
 <script>
   import Page from "$lib/components/Page.svelte";
-  import { shop_cards } from "$lib/utils/shop.ts";
+  import { shop_cards } from "$lib/utils/shop";
   import ShopCard from "$lib/components/ShopCard.svelte";
   export let backgroundClass = 'bg-white';
   let img_therapy = 'img_therapy.png';</script>
