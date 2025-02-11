@@ -6,7 +6,7 @@
 </script>
 
 <div
-    class="mt-3 flex w-full flex-col items-center justify-around gap-5 md:flex-row md:gap-0"
+    class="mt-5 flex w-full flex-col items-center justify-around gap-5 md:flex-row md:gap-0"
 >
     <div
         class="flex max-w-[94%] flex-col items-center justify-center gap-2 text-center text-lg font-semibold italic text-red-700 dark:text-red-500 md:max-w-[40%]"

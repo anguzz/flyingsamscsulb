@@ -1,52 +1,19 @@
 <script>
-  import { onMount } from 'svelte';
-
-  let scriptLoaded = false;
-
-  export let backgroundClass = 'bg-white';
   import Page from "$lib/components/Page.svelte";
-  let img_therapy = 'img_therapy.png';
-
-  onMount(() => {
-    // Inject Stripe's script if not already injected
-    if (!document.querySelector('script[src="https://js.stripe.com/v3/buy-button.js"]')) {
-      const script = document.createElement('script');
-      script.src = "https://js.stripe.com/v3/buy-button.js";
-      script.async = true;
-      document.head.appendChild(script);
-      script.onload = () => scriptLoaded = true;
-    } else {
-      scriptLoaded = true;
-    }
-  });
-
+  import { shop_cards } from "$lib/utils/shop.ts";
+  import ShopCard from "$lib/components/ShopCard.svelte";
+  export let backgroundClass = 'bg-white';
 </script>
 
-<Page id="Shop"  {backgroundClass}> 
-  <div class="text-center">
-    
+<Page id="Shop" {backgroundClass}>
+  <div class="text-center mb-8">
+    <h1 class="text-3xl m-6 font-light text-red-600">More items coming soon</h1>
+  </div>
 
-    <img src={img_therapy} alt="Centered Image" width = 600
-    style="
-      display: block; 
-      margin: 0 auto; 
-      max-width: 100%; 
-      height: auto;
-    ">
- 
-
-
-
-  <!-- once more catalog options become available need to make this an object grid -->
-<stripe-buy-button
-  buy-button-id="buy_btn_1QpL8NCMuPKEpglmL9av9m5W"
-  publishable-key="pk_live_51QntQlCMuPKEpglmLRqRuyEkPBuQK9OVPQEMCxnCuBIA3057dZ2c0i4fe7M2MCtJhO5eCT8X6Fl97rXYRBlbxYRH00Xr7gbEDp"
->
-</stripe-buy-button>
-
-
-
-<h1 class="text-3xl m-6 font-light text-red-600">  More items coming soon </h1>
-
-</div>
+  <!-- Grid layout for the cards -->
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+    {#each shop_cards as item}
+      <ShopCard {item} />
+    {/each}
+  </div>
 </Page>
