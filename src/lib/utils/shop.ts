@@ -7,7 +7,32 @@ export const shop_cards = [
         img3: "shop/product_1/03.png",
         button_id:"buy_btn_1QpL8NCMuPKEpglmL9av9m5W"
     },
-
+    {
+        id: 2,
+        name: "25 mm Mixed Button Pack",
+        img1: "shop/buttons/mixed/01.png",
+        img2: "shop/buttons/red/01.png",
+        img3: "shop/buttons/blue/01.png",
+        img4: "shop/buttons/mixed/02.png",
+        button_id:"buy_btn_1Qt0XMCMuPKEpglmDBMPHusx"
+    },
+    {
+        id: 3,
+        name: "32 mm Mixed button pack x4",
+        img1: "shop/buttons/mixed/01.png",
+        img2: "shop/buttons/red/01.png",
+        img3: "shop/buttons/blue/01.png",
+        img4: "shop/buttons/mixed/02.png",
+        button_id:"buy_btn_1Qt0n3CMuPKEpglmfvQom4r6"
+    },
+    {
+        id: 4,
+        img1: "shop/buttons/mixed/01.png",
+        img2: "shop/buttons/red/01.png",
+        img3: "shop/buttons/blue/01.png",
+        img4: "shop/buttons/mixed/02.png",
+        button_id:"buy_btn_1Qt0ZjCMuPKEpglm564hWZhW"
+    }, 
    
 ];
 

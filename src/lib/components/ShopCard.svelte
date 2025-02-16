@@ -18,7 +18,7 @@
   
     onMount(() => {
       // Prepare images for the mini-carousel
-      images = [item.img1, item.img2, item.img3].filter(Boolean);
+      images = [item.img1, item.img2, item.img3,item.img4].filter(Boolean);
   
       // If Stripe script isn't in the DOM yet, inject it
       if (!document.querySelector('script[src="https://js.stripe.com/v3/buy-button.js"]')) {
