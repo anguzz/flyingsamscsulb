@@ -4,16 +4,10 @@
 
 <script lang="ts">
   import SEO from "svelte-seo";
-  import Home from "$lib/pages/Home.svelte";
   //import Events from "$lib/pages/Events.svelte";
   import About from "$lib/pages/About.svelte";
-  import Shop from "$lib/pages/Shop.svelte";
+  import Board from "$lib/pages/Board.svelte";
 
-  import Calendar from "$lib/pages/Calendar.svelte";
-  import Board from "$lib/pages/Board.svelte"
-  import Instagram from "$lib/pages/Instagram.svelte"
-
-  import Footer from "$lib/pages/Footer.svelte";
 
 /* basic colors at  https://tailwindcss.com/docs/customizing-colors   more at  https://hypercolor.dev/   */ 
   let primaryBackground = "bg-zinc-900 dark:bg-zinc-900";
@@ -26,5 +20,10 @@
   canonical="https://flyingsamscsulb.com/"
 />
 
-<Home />
+
+<About  />
+<Board />
+ 
+
+
 

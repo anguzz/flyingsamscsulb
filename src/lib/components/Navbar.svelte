@@ -45,10 +45,10 @@
       <div
         class="flex-col mt-8 space-y-4 md:flex md:space-y-0 md:flex-row md:items-center md:space-x-10 md:mt-0 {showMenu ? 'flex' : 'hidden'}"
       >
-        <a class="text-gray-100 font-bold hover:text-red-300" href="#home">Home</a>
-        <a class="text-gray-100 font-bold hover:text-red-300" href="#about">About</a>
-        <a class="text-gray-100 font-bold hover:text-red-300" href="#calendar">Calendar</a>
-        <a class="text-gray-100 font-bold hover:text-red-300" href="#team">Team</a>
+        <a class="text-gray-100 font-bold hover:text-red-300" href="/">Home</a>
+        <a class="text-gray-100 font-bold hover:text-red-300" href="/about">About</a>
+        <a class="text-gray-100 font-bold hover:text-red-300" href="/calendar">Calendar</a>
+        <a class="text-gray-100 font-bold hover:text-red-300" href="/shop">Shop</a>
 
       </div>
     </nav>
