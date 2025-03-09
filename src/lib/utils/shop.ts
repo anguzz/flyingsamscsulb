@@ -2,9 +2,9 @@ export const shop_cards = [
     {
         id: 1,
         name: "Running Samaritans Tee",
-        img1: "shop/product_1/01.png",
-        img2: "shop/product_1/02.png",
-        img3: "shop/product_1/03.png",
+        img1: "shop/flying_sams_shirt/01.png",
+        img2: "shop/flying_sams_shirt/02.png",
+        img3: "shop/flying_sams_shirt/03.png",
         button_id:"buy_btn_1Qt1GjCMuPKEpglmWQbogUuM"
     },
     {
@@ -50,6 +50,26 @@ export const shop_cards = [
         img4: "shop/stickers/04.jpg",
         button_id:"buy_btn_1QtgkwCMuPKEpglmWLYm7hEq"
     },  
+    {
+        id: 7,
+        name: "Tacos and Treatments Tee",
+        img1: "shop/tacos_shirt/01.png",
+        img2: "shop/tacos_shirt/02.png",
+        button_id:"buy_btn_1R0spsCMuPKEpglm1Q4tYpZH"
+    },  
+    {
+        id: 8,
+        name: "Beer Can Tee",
+        img1: "shop/beer_shirt/01.png",
+        img2: "shop/beer_shirt/02.png",
+        button_id:"buy_btn_1R0srgCMuPKEpglm5DhVvjRn"
+    },
+    {
+        id: 9,
+        name: "Velcro adventure team patch",
+        img1: "shop/velcro_patch/01.jpg",
+        button_id:"buy_btn_1R0t2MCMuPKEpglmYy6OoGxf"
+    }, 
    
 ];
 
